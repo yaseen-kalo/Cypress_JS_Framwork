@@ -36,7 +36,7 @@ describe('Cypress Asynchronous Nature and its Promise Handling',() =>{
         //verify that we're in shopping cart page or not
         cy.url().should('include','cart');
 
-        //placing an order
+        //placing a complete order
         cy.get('button').contains('Place Order').click();
 
     })
