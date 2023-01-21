@@ -3,7 +3,7 @@
 // mocha
 describe('Cypress Asynchronous Nature and its Promise Handling',() =>{
     // mocha
-    it('e2e testing of adding items till checkout page',() => {
+    it('e2e testing from adding items till checkout page',() => {
         cy.visit('https://rahulshettyacademy.com/seleniumPractise/#/');
         cy.get('input.search-keyword').type('ca');
         cy.wait(2000);
