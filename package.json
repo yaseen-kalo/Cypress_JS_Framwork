@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/yaseen-kalo/Cypress_JS_Framwork#readme",
   "devDependencies": {
-    "cypress": "^12.3.0"
+    "cypress": "^12.3.0",
+    "cypress-iframe": "^1.0.1"
   }
 }

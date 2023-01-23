@@ -5,6 +5,8 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
-    excludeSpecPattern : ['**/1-getting-started/*','**/2-advanced-examples/*']
+    excludeSpecPattern : ['**/1-getting-started/*','**/2-advanced-examples/*'],
+    fixturesFolder : 'cypress/fixtures'
+    // defaultCommandTimeout : 50000
   },
 });
