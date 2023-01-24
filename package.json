@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node_modules/.bin/cypress run",
+    "headlessTest": "npm run test -- --headless",
+    "headedTest": "npm run test -- --headed",
+    "chromeTest": "npm run test -- --browser chrome",
+    "exTest" : "npm run test -- --spec ./cypress/e2e/Examples/*.js --headless",
+    "sec9Test": "npm run test -- --spec ./cypress/e2e/Examples/Section\\ 9:\\ Cypress\\ Framework\\ Part\\ 1-\\ Understanding\\ Fixture\\ and\\ Custom\\ commands/*.js -- browser chrome"
   },
   "repository": {
     "type": "git",
@@ -19,6 +24,7 @@
   "homepage": "https://github.com/yaseen-kalo/Cypress_JS_Framwork#readme",
   "devDependencies": {
     "cypress": "^12.3.0",
-    "cypress-iframe": "^1.0.1"
+    "cypress-iframe": "^1.0.1",
+    "cypress-mochawesome-reporter": "^3.2.3"
   }
 }
