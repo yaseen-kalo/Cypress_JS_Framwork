@@ -1,4 +1,8 @@
 {
   "name": "Smith",
-  "gender": "Female"
+  "email":"smith@steve.au",
+  "password":"abcdef123@",
+  "gender": "Female",
+  "dob": "10101991",
+  "productName": ["Blackberry", "Nokia Edge", "Samsung Note 8"]
 }
