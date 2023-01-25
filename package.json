@@ -8,8 +8,9 @@
     "headlessTest": "npm run test -- --headless",
     "headedTest": "npm run test -- --headed",
     "chromeTest": "npm run test -- --browser chrome",
-    "exTest" : "npm run test -- --spec ./cypress/e2e/Examples/*.js --headless",
-    "sec9Test": "npm run test -- --spec ./cypress/e2e/Examples/Section\\ 9:\\ Cypress\\ Framework\\ Part\\ 1-\\ Understanding\\ Fixture\\ and\\ Custom\\ commands/*.js -- browser chrome"
+    "exTest": "npm run test -- --spec ./cypress/e2e/Examples/*.js --headless",
+    "sec9Test": "npm run test -- --spec ./cypress/e2e/Examples/Section\\ 9:\\ Cypress\\ Framework\\ Part\\ 1-\\ Understanding\\ Fixture\\ and\\ Custom\\ commands/*.js -- browser chrome",
+    "bddTest": "npm run test -- --spec cypress/e2e/Examples/BDD/eCommerce.feature --headed --browser chrome --reporter mochawesome"
   },
   "repository": {
     "type": "git",
@@ -26,5 +27,9 @@
     "cypress": "^12.3.0",
     "cypress-iframe": "^1.0.1",
     "cypress-mochawesome-reporter": "^3.2.3"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^15.1.2",
+    "@cypress/browserify-preprocessor": "latest"
   }
 }
