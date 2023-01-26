@@ -12,6 +12,12 @@
     "sec9Test": "npm run test -- --spec ./cypress/e2e/Examples/Section\\ 9:\\ Cypress\\ Framework\\ Part\\ 1-\\ Understanding\\ Fixture\\ and\\ Custom\\ commands/*.js -- browser chrome",
     "bddTest": "npm run test -- --spec cypress/e2e/Examples/BDD/eCommerce.feature --headed --browser chrome --reporter mochawesome"
   },
+  "cypress-cucumber-preprocessor": {
+    "json": {
+      "enabled": true,
+      "output": "cypress/cucumberReports/cucumber-result.json"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yaseen-kalo/Cypress_JS_Framwork.git"
@@ -26,10 +32,16 @@
   "devDependencies": {
     "cypress": "^12.3.0",
     "cypress-iframe": "^1.0.1",
-    "cypress-mochawesome-reporter": "^3.2.3"
+    "cypress-mochawesome-reporter": "^3.2.3",
+    "install-peers": "^1.0.4",
+    "mocha": "^10.2.0",
+    "multiple-cucumber-html-reporter": "^3.1.0"
   },
   "dependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^15.1.2",
-    "@cypress/browserify-preprocessor": "latest"
+    "@cypress/browserify-preprocessor": "latest",
+    "cucumber": "^6.0.7",
+    "iframe": "^1.0.0",
+    "mochawesome": "^7.1.3"
   }
 }

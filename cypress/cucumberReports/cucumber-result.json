@@ -1,0 +1,70 @@
+[
+  {
+    "description": "    Adding products to card and verify its cost and then order.",
+    "elements": [
+      {
+        "description": "",
+        "id": "e2e-testing-of-ecommerce-product-page;order-product-from-e-commerce-application",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Order Product from e-commerce application",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Open Ecommerce product page",
+            "result": {
+              "duration": 37000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 6,
+            "name": "Add product to shopping cart",
+            "result": {
+              "duration": 473000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 7,
+            "name": "Validate price of all product with total amount",
+            "result": {
+              "duration": 139000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 8,
+            "name": "select Peuchase button and verify successfull order placed message",
+            "result": {
+              "duration": 5460000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "e2e-testing-of-ecommerce-product-page",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "e2e Testing of ecommerce Product Page",
+    "uri": "cypress/e2e/Examples/BDD/eCommerce.feature"
+  }
+]
